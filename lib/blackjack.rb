@@ -48,7 +48,7 @@ def hit?(card_total)
   elsif answer == 's'
     break
   else
-    
+    invalid_command
   end
   
 end
