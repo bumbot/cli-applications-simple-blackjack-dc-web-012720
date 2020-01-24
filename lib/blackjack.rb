@@ -68,7 +68,11 @@ end
 
 def runner
   # code runner here
+  card_total = 
   
-  
+  while card_total <= 21 do
+    card_total = initial_round
+    
+  end
 end
     
