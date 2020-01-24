@@ -32,6 +32,12 @@ end
 
 def initial_round
   # code #initial_round here
+  first_round = 
+  sum = 0
+  
+  
+  puts sum
+  sum
 end
 
 def hit?
