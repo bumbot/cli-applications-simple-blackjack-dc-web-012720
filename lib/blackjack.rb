@@ -7,7 +7,7 @@ def deal_card
   # code #deal_card here
   card_num = Random.new
   
-  card_num.rand(1, 11)
+  card_num.rand(12)
 end
 
 def display_card_total(card_total)
