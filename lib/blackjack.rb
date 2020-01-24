@@ -40,21 +40,25 @@ end
 
 def hit?(card_total)
   # code hit? here
-  prompt_user
-  answer = get_user_input
+  while true do
+    prompt_user
+    answer = get_user_input
   
-  if answer == 'h'
-    card_total += deal_card
-  elsif answer == 's'
-    break
-  else
-    invalid_command
+    if answer == 'h'
+      card_total += deal_card
+      break
+    elsif answer == 's'
+      break
+    else
+      invalid_command
+    end
   end
   
 end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
