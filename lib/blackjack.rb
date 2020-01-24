@@ -45,7 +45,9 @@ def hit?(card_total)
   
   if answer == 'h'
     card_total += deal_card
-  elsif
+  elsif answer == 's'
+    break
+  else
     
   end
   
