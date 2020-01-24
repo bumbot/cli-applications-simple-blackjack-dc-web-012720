@@ -32,16 +32,16 @@ end
 
 def initial_round
   # code #initial_round here
-  first_round = 
-  sum = 0
+  sum = deal_card + deal_card
+  display_card_total(sum)
   
-  
-  puts sum
   sum
 end
 
-def hit?
+def hit?(card_total)
   # code hit? here
+  prompt_user
+  answer = get_user_input
 end
 
 def invalid_command
