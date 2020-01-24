@@ -6,6 +6,7 @@ end
 def deal_card
   # code #deal_card here
   card_num = Random.new
+  
   card_num.rand(1, 11)
 end
 
