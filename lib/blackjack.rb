@@ -41,11 +41,12 @@ end
 def hit?(card_total)
   # code hit? here
   while true do
+    new_card_total = card_total
     prompt_user
     answer = get_user_input
   
     if answer == 'h'
-      card_total += deal_card
+      new_card_total += deal_card
       break
     elsif answer == 's'
       break
@@ -53,8 +54,8 @@ def hit?(card_total)
       invalid_command
     end
   end
-  display_card_total(card_total)
-  card_total
+  display_card_total(new_card_total)
+  new_card_total
 end
 
 def invalid_command
